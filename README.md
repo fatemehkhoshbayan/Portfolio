@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site built with React, TypeScript, and Vite. It showcases work, creative life, impact, and contact information in a multi-page layout with client-side routing.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [React 19](https://react.dev/) and [TypeScript](https://www.typescriptlang.org/)
+- [Vite 8](https://vite.dev/) for dev server and production builds
+- [Tailwind CSS 4](https://tailwindcss.com/) (via `@tailwindcss/vite`)
+- [React Router 7](https://reactrouter.com/) for navigation
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Route            | Description   |
+| ---------------- | ------------- |
+| `/`              | Home          |
+| `/portfolio`     | Portfolio     |
+| `/creative-life` | Creative life |
+| `/impact`        | Impact        |
+| `/contact`       | Contact       |
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Install dependencies:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run the development server (with hot reload):
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Production build and local preview:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Scripts
+
+| Command                | Purpose                            |
+| ---------------------- | ---------------------------------- |
+| `npm run dev`          | Start Vite dev server              |
+| `npm run build`        | Typecheck and build for production |
+| `npm run preview`      | Serve the production build locally |
+| `npm run lint`         | Run ESLint                         |
+| `npm run prettier`     | Format `src` with Prettier         |
+| `npm run check-format` | Check formatting (CI-friendly)     |
+
+Lint-staged runs Prettier on staged files under `src` when configured in your Git hooks.
+
+## Project structure
+
+- `src/App.tsx` — route definitions
+- `src/layout/MainLayout.tsx` — shared chrome (nav, footer)
+- `src/pages/` — page components
+- `src/assets/navItems.ts` — navigation and footer link data
