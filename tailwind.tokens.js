@@ -13,54 +13,46 @@ export const typeRoles = [
   'label-md',
 ];
 
+/**
+ * Utility-agnostic color palette.
+ */
 export const colors = {
-  tertiary: '#5f5f59',
-  error: '#ba1a1a',
-  'primary-fixed-dim': '#fabd00',
-  'outline-variant': '#d4c5ab',
-  'surface-dim': '#d4dbdd',
-  'surface-variant': '#dde4e6',
-  'tertiary-container': '#cccbc3',
-  'inverse-surface': '#2b3234',
-  'inverse-primary': '#fabd00',
-  'surface-bright': '#f4fafd',
-  'on-surface': '#161d1f',
-  'surface-container-high': '#e2e9ec',
-  'on-primary-fixed': '#261a00',
-  'surface-container-low': '#eef5f7',
-  'primary-container': '#ffc107',
-  'on-surface-variant': '#4f4632',
-  'surface-tint': '#785900',
-  primary: '#785900',
-  'error-container': '#ffdad6',
-  'on-secondary-container': '#6b1f00',
-  'secondary-container': '#fe7e4f',
-  'surface-container-highest': '#dde4e6',
-  'secondary-fixed': '#ffdbcf',
-  'on-secondary': '#ffffff',
-  'on-secondary-fixed-variant': '#822800',
-  outline: '#827660',
-  'on-secondary-fixed': '#380c00',
-  'tertiary-fixed': '#e4e3db',
-  'on-background': '#161d1f',
-  'on-primary-fixed-variant': '#5b4300',
-  'on-primary': '#ffffff',
-  background: '#f4fafd',
+  // Brand and accent hues
+  brand: '#785900',
+  'brand-soft': '#ffdf9e',
+  'brand-strong': '#fabd00',
+  accent: '#a43c12',
+  'accent-soft': '#ffdbcf',
+  'accent-strong': '#ffb59c',
+  support: '#5f5f59',
+  'support-soft': '#e4e3db',
+  'support-strong': '#c8c7bf',
+  danger: '#ba1a1a',
+  'danger-soft': '#ffdad6',
+
+  // Neutrals and ink tones
+  'ink-900': '#292524',
+  'ink-700': '#44403c',
+  'ink-500': '#78716c',
+  'ink-inverse': '#ebf2f4',
+  white: '#ffffff',
+
+  // Surfaces and backgrounds
+  canvas: '#fffdf5',
   surface: '#f4fafd',
-  'secondary-fixed-dim': '#ffb59c',
-  secondary: '#a43c12',
-  'surface-container': '#e8eff1',
-  'on-error': '#ffffff',
-  'inverse-on-surface': '#ebf2f4',
-  'surface-container-lowest': '#ffffff',
-  'on-tertiary-fixed-variant': '#474742',
-  'on-tertiary-container': '#555650',
-  'on-primary-container': '#6d5100',
-  'on-tertiary-fixed': '#1b1c17',
-  'on-tertiary': '#ffffff',
-  'tertiary-fixed-dim': '#c8c7bf',
-  'primary-fixed': '#ffdf9e',
-  'on-error-container': '#93000a',
+  'surface-50': '#ffffff',
+  'surface-100': '#eef5f7',
+  'surface-200': '#e8eff1',
+  'surface-300': '#e2e9ec',
+  'surface-400': '#dde4e6',
+  'surface-dim': '#d4dbdd',
+  'surface-inverse': '#2b3234',
+
+  // Lines, outlines, and emphasis
+  line: '#827660',
+  'line-soft': '#d4c5ab',
+  'line-subtle': '#e7e5e4',
+  highlight: '#f59e0b',
 };
 
 export const borderRadius = {
@@ -79,6 +71,13 @@ export const spacing = {
   'margin-edge': '32px',
   'section-gap': '80px',
   'stack-md': '16px',
+};
+
+export const boxShadow = {
+  sm: '0 6px 12px -10px rgba(0, 0, 0, 0.28)',
+  md: '0 10px 20px -14px rgba(0, 0, 0, 0.35)',
+  'sm-up': '0 -6px 12px -10px rgba(0, 0, 0, 0.28)',
+  'md-up': '0 -10px 20px -14px rgba(0, 0, 0, 0.35)',
 };
 
 /** One stack for every semantic type role — avoids repeating `['Newsreader']`. */

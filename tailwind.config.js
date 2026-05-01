@@ -1,4 +1,11 @@
-import { borderRadius, colors, fontFamily, fontSize, spacing } from './tailwind.tokens.js';
+import {
+  borderRadius,
+  boxShadow,
+  colors,
+  fontFamily,
+  fontSize,
+  spacing,
+} from './tailwind.tokens.js';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,6 +14,7 @@ export default {
   theme: {
     extend: {
       colors,
+      boxShadow,
       borderRadius,
       spacing,
       fontFamily,

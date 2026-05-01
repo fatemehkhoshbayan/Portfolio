@@ -1,12 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import MainLayout from './layout/MainLayout.tsx';
-import {
-  HomePage,
-  PortfolioPage,
-  CreativeLifePage,
-  ImpactPage,
-  ContactPage,
-} from './pages/index.ts';
+import { HomePage, PortfolioPage, CreativeLifePage, ImpactPage } from './pages/index.ts';
 
 export default function App() {
   return (
@@ -16,7 +10,6 @@ export default function App() {
         <Route path="portfolio" element={<PortfolioPage />} />
         <Route path="creative-life" element={<CreativeLifePage />} />
         <Route path="impact" element={<ImpactPage />} />
-        <Route path="contact" element={<ContactPage />} />
       </Route>
     </Routes>
   );

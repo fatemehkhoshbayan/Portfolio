@@ -1,25 +1,31 @@
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import { navItems, footerLinks } from '../assets/navItems.ts';
 
 export default function MainLayout() {
   return (
     <>
-      <header className="full-width sticky top-0 z-50 bg-[#FFFDF5] shadow-md">
+      <header className="full-width bg-canvas sticky top-0 z-50 shadow-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
-          <p className="font-headline-lg text-2xl font-bold text-stone-800">Fatemeh Khoshbayan</p>
-          <ul className="hidden items-center gap-8 font-serif text-lg tracking-tight md:flex">
+          <p className="font-headline-lg text-ink-900 text-2xl font-bold">Fatemeh Khoshbayan</p>
+          <ul className="items-center gap-8 font-serif text-lg tracking-tight md:flex">
             {navItems.map(item => (
               <li key={item.label}>
-                <Link
-                  className="pb-1 text-stone-500 transition-all duration-300 hover:border-amber-500 hover:text-amber-500"
+                <NavLink
+                  className={({ isActive }) =>
+                    `border-b-2 pb-1 transition-all duration-300 ${
+                      isActive
+                        ? 'border-highlight text-highlight'
+                        : 'text-ink-500 hover:border-highlight hover:text-highlight border-transparent'
+                    }`
+                  }
                   to={item.href}
                 >
                   {item.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
-          <button className="bg-primary-container text-on-primary-container font-label-md rounded-full px-6 py-2 transition-transform ease-out hover:scale-105">
+          <button className="bg-brand-strong font-label-md text-ink-700 rounded-full px-6 py-2 transition-transform ease-out hover:scale-105">
             Get in touch
           </button>
         </nav>
@@ -29,17 +35,19 @@ export default function MainLayout() {
         <Outlet />
       </main>
 
-      <footer className="full-width border-t border-stone-200 bg-[#FFFDF5] py-12 shadow-md">
+      <footer className="full-width border-line-subtle bg-canvas shadow-md-up py-12">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 font-serif text-sm italic md:flex-row">
-          <p className="text-lg font-semibold text-stone-700">Fatemeh Khoshbayan</p>
-          <p className="text-stone-500">© 2026 Moving mountains with my smile.</p>
+          <p className="text-ink-700 text-lg font-semibold">Fatemeh Khoshbayan</p>
+          <p className="text-ink-500">© 2026 Moving mountains with my smile.</p>
           <ul className="flex gap-6">
             {footerLinks.map(link => {
               return (
                 <li key={link.label}>
                   <a
-                    className="text-stone-500 transition-all duration-300 hover:text-amber-500"
+                    className="text-ink-500 hover:text-highlight transition-all duration-300"
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {link.label}
                   </a>
