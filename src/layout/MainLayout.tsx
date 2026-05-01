@@ -31,7 +31,7 @@ export default function MainLayout() {
         </nav>
       </header>
 
-      <main className="min-h-screen">
+      <main className="mx-auto flex min-h-screen min-w-[80%] flex-col items-center justify-center">
         <Outlet />
       </main>
 

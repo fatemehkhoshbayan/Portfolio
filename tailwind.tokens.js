@@ -39,6 +39,7 @@ export const colors = {
 
   // Surfaces and backgrounds
   canvas: '#fffdf5',
+  container: '#fe7e4f',
   surface: '#f4fafd',
   'surface-50': '#ffffff',
   'surface-100': '#eef5f7',
@@ -76,8 +77,10 @@ export const spacing = {
 export const boxShadow = {
   sm: '0 6px 12px -10px rgba(0, 0, 0, 0.28)',
   md: '0 10px 20px -14px rgba(0, 0, 0, 0.35)',
+  'md-all': '0 0 20px rgba(0, 0, 0, 0.22), 0 0 8px rgba(0, 0, 0, 0.12)',
   'sm-up': '0 -6px 12px -10px rgba(0, 0, 0, 0.28)',
   'md-up': '0 -10px 20px -14px rgba(0, 0, 0, 0.35)',
+  sun: '0 0 36px -6px rgba(255, 193, 7, 0.22), 0 0 22px rgba(0, 0, 0, 0.12)',
 };
 
 /** One stack for every semantic type role — avoids repeating `['Newsreader']`. */
