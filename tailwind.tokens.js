@@ -68,10 +68,9 @@ export const spacing = {
   gutter: '24px',
   'container-max': '1200px',
   'stack-sm': '8px',
-  'stack-lg': '32px',
-  'margin-edge': '32px',
-  'section-gap': '80px',
   'stack-md': '16px',
+  'stack-lg': '32px',
+  'section-gap': '120px',
 };
 
 export const boxShadow = {
