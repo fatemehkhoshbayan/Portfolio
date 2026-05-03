@@ -26,6 +26,7 @@ export const colors = {
   accent: '#a43c12',
   'accent-soft': '#ffdbcf',
   'accent-strong': '#ffb59c',
+  'accent-dark': '#ffc107',
   support: '#5f5f59',
   'support-soft': '#e4e3db',
   'support-strong': '#c8c7bf',
@@ -74,6 +75,7 @@ export const spacing = {
   'stack-md': '16px',
   'stack-lg': '32px',
   'stack-xl': '64px',
+  'stack-2xl': '80px',
   'section-gap': '120px',
 };
 
