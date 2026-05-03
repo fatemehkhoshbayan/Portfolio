@@ -19,7 +19,7 @@ export default function ProjectSection() {
           See all projects
         </Link>
       </div>
-      <div className="gap-stack-xl grid grid-cols-1 md:grid-cols-2">
+      <div className="gap-stack-xl grid grid-cols-1 lg:grid-cols-2">
         <ProjectCard projects={projects} />
       </div>
     </section>

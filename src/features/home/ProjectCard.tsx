@@ -10,14 +10,14 @@ export default function ProjectCard({ projects }: IProjectCardProps) {
     <article key={project.title} className="group cursor-pointer">
       <figure
         className={cn(
-          'mb-stack-md shadow-sun relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl p-6 sm:p-8 md:p-10',
+          'mb-stack-md shadow-sun relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl',
           project.cardBackgroundClass !== undefined
             ? project.cardBackgroundClass || false
             : 'bg-brand-soft',
         )}
       >
         <img
-          className="max-w-[75%] rounded-sm object-contain shadow-md transition-transform duration-500 group-hover:scale-105 sm:max-w-[85%]"
+          className="max-w-[75%] rounded-sm object-contain shadow-md transition-transform duration-500 group-hover:scale-105"
           data-alt={project.dataAlt}
           src={project.image}
         />
