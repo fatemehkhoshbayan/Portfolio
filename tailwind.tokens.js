@@ -21,6 +21,8 @@ export const colors = {
   brand: '#785900',
   'brand-soft': '#ffdf9e',
   'brand-strong': '#fabd00',
+  'warm-peach': '#f5dfc7',
+  'warm-amber': '#dfa037',
   accent: '#a43c12',
   'accent-soft': '#ffdbcf',
   'accent-strong': '#ffb59c',
@@ -29,6 +31,7 @@ export const colors = {
   'support-strong': '#c8c7bf',
   danger: '#ba1a1a',
   'danger-soft': '#ffdad6',
+  dark: '#161d1f',
 
   // Neutrals and ink tones
   'ink-900': '#292524',
@@ -70,6 +73,7 @@ export const spacing = {
   'stack-sm': '8px',
   'stack-md': '16px',
   'stack-lg': '32px',
+  'stack-xl': '64px',
   'section-gap': '120px',
 };
 
