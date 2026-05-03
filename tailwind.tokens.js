@@ -21,14 +21,18 @@ export const colors = {
   brand: '#785900',
   'brand-soft': '#ffdf9e',
   'brand-strong': '#fabd00',
+  'warm-peach': '#f5dfc7',
+  'warm-amber': '#dfa037',
   accent: '#a43c12',
   'accent-soft': '#ffdbcf',
   'accent-strong': '#ffb59c',
+  'accent-dark': '#ffc107',
   support: '#5f5f59',
   'support-soft': '#e4e3db',
   'support-strong': '#c8c7bf',
   danger: '#ba1a1a',
   'danger-soft': '#ffdad6',
+  dark: '#161d1f',
 
   // Neutrals and ink tones
   'ink-900': '#292524',
@@ -39,6 +43,7 @@ export const colors = {
 
   // Surfaces and backgrounds
   canvas: '#fffdf5',
+  container: '#fe7e4f',
   surface: '#f4fafd',
   'surface-50': '#ffffff',
   'surface-100': '#eef5f7',
@@ -67,17 +72,20 @@ export const spacing = {
   gutter: '24px',
   'container-max': '1200px',
   'stack-sm': '8px',
-  'stack-lg': '32px',
-  'margin-edge': '32px',
-  'section-gap': '80px',
   'stack-md': '16px',
+  'stack-lg': '32px',
+  'stack-xl': '64px',
+  'stack-2xl': '80px',
+  'section-gap': '120px',
 };
 
 export const boxShadow = {
   sm: '0 6px 12px -10px rgba(0, 0, 0, 0.28)',
   md: '0 10px 20px -14px rgba(0, 0, 0, 0.35)',
+  'md-all': '0 0 20px rgba(0, 0, 0, 0.22), 0 0 8px rgba(0, 0, 0, 0.12)',
   'sm-up': '0 -6px 12px -10px rgba(0, 0, 0, 0.28)',
   'md-up': '0 -10px 20px -14px rgba(0, 0, 0, 0.35)',
+  sun: '0 0 36px -6px rgba(255, 193, 7, 0.22), 0 0 22px rgba(0, 0, 0, 0.12)',
 };
 
 /** One stack for every semantic type role — avoids repeating `['Newsreader']`. */

@@ -1,3 +1,12 @@
+import { ApproachSection, HeroSection, ProjectSection, ContactSection } from '../features';
+
 export default function HomePage() {
-  return <></>;
+  return (
+    <>
+      <HeroSection />
+      <ApproachSection />
+      <ProjectSection />
+      <ContactSection />
+    </>
+  );
 }

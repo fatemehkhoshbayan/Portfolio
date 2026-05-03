@@ -25,13 +25,18 @@ export default function MainLayout() {
               </li>
             ))}
           </ul>
-          <button className="bg-brand-strong font-label-md text-ink-700 rounded-full px-6 py-2 transition-transform ease-out hover:scale-105">
+          <a
+            href={import.meta.env.VITE_CALENDAR_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-brand-strong font-label-md text-ink-700 rounded-full px-6 py-2 transition-transform ease-out hover:scale-105"
+          >
             Get in touch
-          </button>
+          </a>
         </nav>
       </header>
 
-      <main className="min-h-screen">
+      <main className="mx-auto flex min-h-screen min-w-[80%] flex-col items-center justify-center">
         <Outlet />
       </main>
 
