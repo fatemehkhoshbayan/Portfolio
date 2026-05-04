@@ -9,9 +9,9 @@ export default function HeroSection() {
             Moving mountains with a smile.
           </h1>
           <p className="font-body-lg text-body-lg text-support max-w-2xl leading-relaxed italic">
-            I am a Full Stack Developer dedicated to combining technical rigor with joyful user
-            experiences. I believe that engineering excellence shouldn't feel cold; it should feel
-            like a warm invitation to explore.
+            I am <strong>Fatemeh Khoshbayan</strong>, a Full Stack Developer dedicated to combining
+            technical rigor with joyful user experiences. I believe that engineering excellence
+            shouldn't feel cold; it should feel like a warm invitation to explore.
           </p>
           <div className="mt-stack-lg flex flex-col items-center gap-12 sm:flex-row sm:flex-wrap sm:justify-center md:justify-start">
             <Link
