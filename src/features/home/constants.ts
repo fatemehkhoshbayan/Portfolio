@@ -36,3 +36,5 @@ export const projects = [
     cardBackgroundClass: 'bg-warm-amber',
   },
 ];
+
+export const stacks = ['React/Next.js', 'Python', 'TypeScript', 'Postgres', 'MongoDB'];
