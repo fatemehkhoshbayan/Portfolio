@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <header className="py-section-gap gap-stack-xl w-full max-w-7xl text-center md:text-left">
+    <header className="py-section-gap gap-stack-xl w-full max-w-7xl px-12 text-center md:text-left lg:px-4">
       <div className="bg-container/20 text-dark text-label-sm mb-stack-md inline-block rounded-full px-4 py-2 tracking-widest uppercase">
         Technical Portfolio
       </div>
