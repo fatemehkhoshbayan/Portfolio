@@ -19,7 +19,6 @@
     "outDir": "./node_modules/.tmp/ts-app-declaration",
     "jsx": "react-jsx",
 
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@features/*": ["./src/features/*"],
