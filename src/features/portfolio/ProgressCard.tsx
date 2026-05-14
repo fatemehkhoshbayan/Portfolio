@@ -1,4 +1,4 @@
-import type { TProgress } from '../interfaces';
+import type { TProgress } from './interfaces';
 
 interface IProgressCardProps {
   progress: TProgress;

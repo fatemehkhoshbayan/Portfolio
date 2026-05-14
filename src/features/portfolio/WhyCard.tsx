@@ -1,4 +1,4 @@
-import type { TFeature } from '../constant';
+import type { TFeature } from './interfaces';
 import { cn } from '@/lib/cn';
 
 interface IWhyCardProps {
