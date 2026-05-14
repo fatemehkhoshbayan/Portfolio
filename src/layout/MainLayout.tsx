@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom';
-import { navItems, footerLinks } from '../assets/navItems.ts';
+import { navItems, footerLinks } from '@/assets/navItems.ts';
 
 export default function MainLayout() {
   return (
