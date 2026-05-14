@@ -11,53 +11,123 @@ export const typeRoles = [
   'body-md',
   'body-lg',
   'label-md',
+  'label-sm',
 ];
 
 /**
- * Utility-agnostic color palette.
+ * Material-style roles with short inner keys (Tailwind: `bg-primary-c`, `text-on-surf`).
+ * c = container, f = fixed, fd = fixed-dim, on-c / on-f / on-fv = on-container / on-fixed / on-fixed-variant
  */
+const palette = {
+  primary: {
+    DEFAULT: '#785900',
+    c: '#ffc107',
+    f: '#ffdf9e',
+    fd: '#fabd00',
+    tint: '#785900',
+    'on-f': '#261a00',
+    'on-fv': '#5b4300',
+    'on-c': '#6d5100',
+  },
+  secondary: {
+    DEFAULT: '#fe7e4f',
+    f: '#ffdbcf',
+    'on-f': '#380c00',
+    'on-fv': '#822800',
+    'on-c': '#6b1f00',
+  },
+  tertiary: {
+    DEFAULT: '#5f5f59',
+    c: '#cccbc3',
+    f: '#e4e3db',
+    fd: '#c8c7bf',
+    'on-f': '#1b1c17',
+    'on-fv': '#474742',
+    'on-c': '#555650',
+  },
+  error: {
+    DEFAULT: '#ba1a1a',
+    c: '#ffdad6',
+    'on-c': '#93000a',
+  },
+  surface: {
+    DEFAULT: '#f4fafd',
+    b: '#f4fafd',
+    dim: '#d4dbdd',
+    v: '#dde4e6',
+    0: '#ffffff',
+    1: '#eef5f7',
+    2: '#e8eff1',
+    3: '#e2e9ec',
+    4: '#dde4e6',
+  },
+  neutral: {
+    bg: '#f4fafd',
+    out: '#827660',
+    'out-v': '#d4c5ab',
+    inv: '#2b3234',
+  },
+  on: {
+    p: '#ffffff',
+    s: '#ffffff',
+    t: '#ffffff',
+    e: '#ffffff',
+    surf: '#161d1f',
+    'surf-v': '#4f4632',
+    bg: '#161d1f',
+    inv: '#ebf2f4',
+    pc: '#6d5100',
+    sc: '#6b1f00',
+  },
+};
+
 export const colors = {
-  // Brand and accent hues
-  brand: '#785900',
-  'brand-soft': '#ffdf9e',
-  'brand-strong': '#fabd00',
+  ...palette,
+
+  // --- Legacy / UI aliases (keep existing class names working) ---
+  brand: palette.primary.DEFAULT,
+  'brand-soft': palette.primary.f,
+  'brand-strong': palette.primary.fd,
+  'brand-dark': palette.primary['on-fv'],
   'warm-peach': '#f5dfc7',
   'warm-amber': '#dfa037',
-  accent: '#a43c12',
-  'accent-soft': '#ffdbcf',
-  'accent-strong': '#ffb59c',
-  'accent-dark': '#ffc107',
-  support: '#5f5f59',
-  'support-soft': '#e4e3db',
-  'support-strong': '#c8c7bf',
-  danger: '#ba1a1a',
-  'danger-soft': '#ffdad6',
-  dark: '#161d1f',
 
-  // Neutrals and ink tones
+  accent: palette.secondary['on-fv'],
+  'accent-soft': palette.secondary.f,
+  'accent-strong': '#ffb59c',
+  'accent-dark': palette.primary.c,
+
+  support: palette.tertiary.DEFAULT,
+  'support-soft': palette.tertiary.f,
+  'support-strong': palette.tertiary.fd,
+
+  danger: palette.error.DEFAULT,
+  'danger-soft': palette.error.c,
+
+  dark: palette.on.surf,
+
   'ink-900': '#292524',
   'ink-700': '#44403c',
   'ink-500': '#78716c',
-  'ink-inverse': '#ebf2f4',
+  'ink-inverse': palette.on.inv,
   white: '#ffffff',
 
-  // Surfaces and backgrounds
   canvas: '#fffdf5',
-  container: '#fe7e4f',
-  surface: '#f4fafd',
-  'surface-50': '#ffffff',
-  'surface-100': '#eef5f7',
-  'surface-200': '#e8eff1',
-  'surface-300': '#e2e9ec',
-  'surface-400': '#dde4e6',
-  'surface-dim': '#d4dbdd',
-  'surface-inverse': '#2b3234',
+  container: palette.secondary.DEFAULT,
+  'on-container': palette.secondary['on-c'],
 
-  // Lines, outlines, and emphasis
-  line: '#827660',
-  'line-soft': '#d4c5ab',
+  'surface-50': palette.surface[0],
+  'surface-100': palette.surface[1],
+  'surface-200': palette.surface[2],
+  'surface-300': palette.surface[3],
+  'surface-400': palette.surface[4],
+  'surface-dim': palette.surface.dim,
+  'surface-inverse': palette.neutral.inv,
+
+  line: palette.neutral.out,
+  'line-soft': palette.neutral['out-v'],
   'line-subtle': '#e7e5e4',
-  highlight: '#f59e0b',
+  highlight: palette.primary.fd,
 };
 
 export const borderRadius = {

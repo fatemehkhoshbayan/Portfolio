@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import MainLayout from './layout/MainLayout.tsx';
-import { HomePage, PortfolioPage, CreativeLifePage, ImpactPage } from './pages/index.ts';
+import { HomePage, PortfolioPage, CreativeLifePage, ImpactPage } from '@/pages';
 
 export default function App() {
   return (

@@ -13,7 +13,7 @@ export default function ProjectSection() {
           </p>
         </div>
         <Link
-          className="font-label-md text-accent border-secondary hover:text-on-secondary-container border-b pb-1 transition-colors"
+          className="font-label-md text-accent border-secondary hover:text-on-sc border-b pb-1 transition-colors"
           to="/Portfolio"
         >
           See all projects

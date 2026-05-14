@@ -1,11 +1,11 @@
-import { Card, Pill, PillGroup } from '../../ui';
-import { approachCards } from './constants';
+import { Card, Pill, PillGroup } from '@/ui';
+import { approachCards, stacks } from './constants';
 
 export default function ApproachSection() {
   return (
     <section className="py-section-gap w-full max-w-7xl px-4">
       <div className="mb-stack-lg">
-        <h2 className="font-headline-lg text-headline-lg text-on-surface">
+        <h2 className="font-headline-lg text-headline-lg text-on-surf">
           Philosophy &amp; Approach
         </h2>
         <div className="bg-brand-strong mt-3 h-1 w-24"></div>
@@ -22,9 +22,9 @@ export default function ApproachSection() {
             </p>
           </div>
           <PillGroup className="mt-8">
-            <Pill>React/Next.js</Pill>
-            <Pill>Node.js</Pill>
-            <Pill>TypeScript</Pill>
+            {stacks.map(stack => (
+              <Pill key={stack}>{stack}</Pill>
+            ))}
           </PillGroup>
         </div>
         <div className="bg-container p-stack-lg flex flex-col items-center justify-center gap-3 rounded-xl text-center text-white">

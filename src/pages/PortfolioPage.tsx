@@ -1,3 +1,11 @@
+import { PortfolioHeroSection, FocusSection, ProjectsSection } from '@/features';
+
 export default function PortfolioPage() {
-  return <></>;
+  return (
+    <>
+      <PortfolioHeroSection />
+      <ProjectsSection />
+      <FocusSection />
+    </>
+  );
 }
