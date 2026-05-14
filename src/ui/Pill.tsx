@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { cn } from '@/lib/cn';
 
 type PillProps = {
   children: ReactNode;
@@ -6,13 +7,7 @@ type PillProps = {
 };
 
 export default function Pill({ children, className }: PillProps) {
-  return (
-    <span
-      className={['bg-surface-200 rounded-full px-3 py-1', className].filter(Boolean).join(' ')}
-    >
-      {children}
-    </span>
-  );
+  return <span className={cn('bg-surface-200 rounded-full px-3 py-1', className)}>{children}</span>;
 }
 
 type PillGroupProps = {
@@ -21,9 +16,5 @@ type PillGroupProps = {
 };
 
 export function PillGroup({ children, className }: PillGroupProps) {
-  return (
-    <div className={['text-label-sm flex flex-wrap gap-4', className].filter(Boolean).join(' ')}>
-      {children}
-    </div>
-  );
+  return <div className={cn('text-label-sm flex flex-wrap gap-4', className)}>{children}</div>;
 }
