@@ -9,7 +9,7 @@ interface IProjectInfoSectionProps {
 export default function ProjectInfoSection({ project }: IProjectInfoSectionProps) {
   return (
     <>
-      <article className="group shadow-sun relative overflow-hidden rounded-xl bg-white transition-all duration-500 hover:-translate-y-1 md:col-span-8">
+      <article className="group shadow-sun relative overflow-hidden rounded-xl bg-white transition-all duration-500 hover:-translate-y-1 min-[1000px]:col-span-8">
         <div className="aspect-video overflow-hidden">
           <img
             alt={project.cover_img.alt}

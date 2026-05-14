@@ -4,7 +4,7 @@ import { projects } from './constants';
 
 export default function ProjectSection() {
   return (
-    <section className="py-section-gap w-full max-w-7xl px-4">
+    <section className="py-section-gap w-full max-w-7xl px-12 lg:px-4">
       <div className="mb-stack-lg flex items-end justify-between">
         <div>
           <h2 className="font-headline-lg text-headline-lg text-dark">Selected Works</h2>

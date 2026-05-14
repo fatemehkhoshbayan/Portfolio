@@ -9,17 +9,17 @@ export default function ProjectsSection() {
     <>
       {PROJECTS.map(project => {
         return (
-          <section key={project.title} className="gap-stack-lg py-stack-2xl">
+          <section key={project.title} className="gap-stack-lg py-stack-2xl px-12 lg:px-4">
             <h3 className="font-headline-lg text-headline-lg text-dark pb-stack-lg">
               {project.title}
             </h3>
             <section
               key={project.title}
-              className="gap-stack-lg grid w-full max-w-7xl grid-cols-1 md:grid-cols-12"
+              className="gap-stack-lg grid w-full max-w-7xl grid-cols-1 lg:grid-cols-12"
             >
               <ProjectInfoSection project={project} />
 
-              <div className="gap-stack-lg flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 md:col-span-4">
+              <div className="gap-stack-lg flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 lg:col-span-4">
                 <ProgressCard progress={project.progress} />
                 <BuiltCard built={project.built} />
               </div>

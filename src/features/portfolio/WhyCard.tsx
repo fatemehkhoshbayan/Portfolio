@@ -7,7 +7,7 @@ interface IWhyCardProps {
 
 export default function WhyCard({ reason }: IWhyCardProps) {
   return (
-    <article className="bg-on-surf p-stack-xl gap-stack-xl relative flex flex-col items-center overflow-hidden rounded-xl text-white md:col-span-12 md:flex-row">
+    <article className="bg-on-surf p-stack-xl gap-stack-xl relative flex flex-col items-center overflow-hidden rounded-xl text-white min-[1000px]:col-span-12 min-[1000px]:flex-row">
       <div className="flex-1">
         <h3 className="font-headline-lg text-headline-lg mb-stack-sm text-primary-f">
           {reason.title}
