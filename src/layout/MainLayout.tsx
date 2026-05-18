@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink, Outlet } from 'react-router-dom';
 import { navItems, footerLinks } from '@/assets/navItems.ts';
 
@@ -12,10 +13,10 @@ export default function MainLayout() {
               <li key={item.label}>
                 <NavLink
                   className={({ isActive }) =>
-                    `border-b-2 pb-1 transition-all duration-300 ${
+                    `border-b-2 pb-1 text-xl transition-all duration-300 ${
                       isActive
                         ? 'border-highlight text-highlight'
-                        : 'text-ink-500 hover:border-highlight hover:text-highlight border-transparent'
+                        : 'text-ink-700 hover:border-highlight hover:text-highlight border-transparent'
                     }`
                   }
                   to={item.href}
@@ -29,7 +30,7 @@ export default function MainLayout() {
             href={import.meta.env.VITE_CALENDAR_BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-brand-strong font-label-md text-ink-700 rounded-full px-6 py-2 transition-transform ease-out hover:scale-105"
+            className="bg-brand-strong font-label-md text-body-md text-ink-700 rounded-full px-6 py-2 transition-transform ease-out hover:scale-105"
           >
             Get in touch
           </a>
@@ -49,12 +50,13 @@ export default function MainLayout() {
               return (
                 <li key={link.label}>
                   <a
+                    aria-label={link.label}
                     className="text-ink-500 hover:text-highlight transition-all duration-300"
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {link.label}
+                    <FontAwesomeIcon icon={link.icon} aria-hidden="true" className="text-2xl" />
                   </a>
                 </li>
               );
