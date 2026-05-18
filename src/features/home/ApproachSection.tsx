@@ -15,7 +15,7 @@ export default function ApproachSection() {
           <div>
             <span className="material-symbols-outlined text-brand mb-4 text-4xl">architecture</span>
             <h3 className="font-headline-md text-headline-md mb-2">Technical Rigor</h3>
-            <p className="font-body-md text-body-md text-support">
+            <p className="font-body-md text-body-lg text-support">
               Clean code is the foundation, but robust architecture is the roof. I build systems
               that scale gracefully while remaining maintainable and secure. Every line of code is
               an opportunity for clarity and precision.
@@ -30,7 +30,7 @@ export default function ApproachSection() {
         <div className="bg-container p-stack-lg flex flex-col items-center justify-center gap-3 rounded-xl text-center text-white">
           <span className="material-symbols-outlined">sentiment_satisfied</span>
           <h3 className="font-headline-md text-headline-md">Joyful Design</h3>
-          <p className="font-body-md">
+          <p className="font-body-md text-body-lg">
             Technology should delight. I focus on micro-interactions and transitions that make users
             smile.
           </p>

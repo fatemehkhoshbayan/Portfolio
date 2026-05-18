@@ -10,8 +10,8 @@ export default function Card({ icon, title, desc }: ICardProps) {
         {icon}
       </span>
       <div>
-        <h4 className="font-label-md text-brand mb-1">{title}</h4>
-        <p className="text-support text-sm">{desc}</p>
+        <h4 className="font-label-md text-brand text-body-md mb-1">{title}</h4>
+        <p className="text-support text-body-md">{desc}</p>
       </div>
     </div>
   );
