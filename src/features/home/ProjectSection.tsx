@@ -8,12 +8,12 @@ export default function ProjectSection() {
       <div className="mb-stack-lg flex items-end justify-between">
         <div>
           <h2 className="font-headline-lg text-headline-lg text-dark">Selected Works</h2>
-          <p className="font-body-md text-support mt-2">
+          <p className="font-body-md text-support text-body-lg mt-2">
             A glimpse into digital spaces I've crafted with care.
           </p>
         </div>
         <Link
-          className="font-label-md text-accent border-secondary hover:text-on-sc border-b pb-1 transition-colors"
+          className="font-label-md text-body-lg text-accent border-secondary hover:text-on-sc border-b pb-1 transition-colors"
           to="/Portfolio"
         >
           See all projects

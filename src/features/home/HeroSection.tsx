@@ -24,7 +24,7 @@ export default function HeroSection() {
           <h1 className="font-display-lg text-display-lg mb-stack-md text-brand tracking-tight">
             Moving mountains with a smile.
           </h1>
-          <p className="font-body-lg text-body-lg text-support max-w-2xl leading-relaxed italic">
+          <p className="font-body-lg text-body-xl text-support max-w-2xl leading-relaxed italic">
             I am <strong>Fatemeh Khoshbayan</strong>, a Full Stack Developer dedicated to combining
             technical rigor with joyful user experiences. I believe that engineering excellence
             shouldn't feel cold; it should feel like a warm invitation to explore.

@@ -3,6 +3,89 @@ import type { IProject, TFocus } from './interfaces';
 export const PROJECTS: IProject[] = [
   {
     cover_img: {
+      src: './quran-extension.png',
+      alt: 'AI-Powered Daily Quran Chrome Extension',
+      data_alt:
+        'AI-Powered Daily Quran Chrome Extension: daily Quran reading, recitation, and reflection with AI-generated insights and personalized recommendations.',
+    },
+    gallery: [
+      {
+        src: './easily-change-verse.png',
+        alt: 'Easily change verse',
+        caption: 'Easily change verse',
+      },
+      {
+        src: './more-explanation.png',
+        alt: 'Get more explanation',
+        caption: 'Get more explanation',
+      },
+      {
+        src: './ask-anything-from-AI.png',
+        alt: 'Ask AI About the Verse',
+        caption: 'Ask AI About the Verse',
+      },
+    ],
+    pills: ['React', 'TypeScript', 'Nest.js', 'Chrome Extension'],
+    progress: {
+      icon: 'auto_awesome',
+      topFeature: ['LLM', 'Quran Foundation'],
+      title: 'AI-Powered Daily Quran Chrome Extension',
+      description: `Daily Quran v2 focuses on habit-friendly engagement: switch verses instantly, request layered explanations, and ask contextual questions in natural language—while keeping the experience lightweight, respectful, and free for everyday use.`,
+      progressTitle: ['Roadmap · v2', 'In development'],
+    },
+    built: {
+      title: 'Built with',
+      description:
+        'Designed for low-friction daily use inside the browser: a React + TypeScript side-panel UI, Nest.js APIs for structured verse retrieval and AI orchestration, and production-ready deployment for dependable performance.',
+      toolkitTags: [
+        'React',
+        'TypeScript',
+        'Nest.js',
+        'Chrome Extension',
+        'LLM',
+        'Side Panel',
+        'Tailwind CSS',
+        'openai',
+        'vite',
+        'Qwen',
+        'Vercel/serverless deployment',
+        'Axios',
+      ],
+    },
+    title: 'AI-Powered Daily Quran',
+    description: `Maintaining a spiritual routine is difficult when most of the day happens in the browser. Daily Quran removes that friction by bringing reading, listening, and reflection directly into Chrome's side panel, so users can stay focused on work or study while still keeping meaningful Quran engagement in their daily flow.`,
+    links: [
+      {
+        label: 'View live extension',
+        href: 'https://chromewebstore.google.com/detail/daily-quran/diilngbfimlnkdbabjhadnblkhfbfcge',
+        icon: 'arrow_forward',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/fatemehkhoshbayan/qoran-chrome-extension',
+        icon: 'open_in_new',
+      },
+    ],
+    why: {
+      title: 'Why AI-Powered Daily Quran',
+      description:
+        'The project solves a practical habit problem: people want consistent Quran time, but context switching to separate apps breaks momentum. With side-panel access, quick verse discovery, and AI-supported explanation, Daily Quran makes spiritual mindfulness feel native to modern digital routines—for busy professionals, students, new learners, and daily readers alike.',
+      features: [
+        {
+          title: 'AI-Powered',
+          description: 'Integrated with LLM',
+          titleColor: 'text-secondary text-4xl',
+        },
+        {
+          title: 'Side Panel',
+          description: 'Easy access for spiritual routines',
+          titleColor: 'text-primary-f text-4xl',
+        },
+      ],
+    },
+  },
+  {
+    cover_img: {
       src: './flexify.png',
       alt: 'Flexify workout app: browsing exercises overview',
       data_alt:
@@ -81,89 +164,6 @@ export const PROJECTS: IProject[] = [
           title: 'SPA',
           description: 'Live on Vercel',
           titleColor: 'text-primary-f',
-        },
-      ],
-    },
-  },
-  {
-    cover_img: {
-      src: './quran-extension.png',
-      alt: 'AI-Powered Daily Quran Chrome Extension',
-      data_alt:
-        'AI-Powered Daily Quran Chrome Extension: daily Quran reading, recitation, and reflection with AI-generated insights and personalized recommendations.',
-    },
-    gallery: [
-      {
-        src: './easily-change-verse.png',
-        alt: 'Easily change verse',
-        caption: 'Easily change verse',
-      },
-      {
-        src: './more-explanation.png',
-        alt: 'Get more explanation',
-        caption: 'Get more explanation',
-      },
-      {
-        src: './ask-anything-from-AI.png',
-        alt: 'Ask AI About the Verse',
-        caption: 'Ask AI About the Verse',
-      },
-    ],
-    pills: ['React', 'TypeScript', 'Nest.js', 'Chrome Extension'],
-    progress: {
-      icon: 'auto_awesome',
-      topFeature: ['LLM', 'Quran Foundation'],
-      title: 'AI-Powered Daily Quran Chrome Extension',
-      description: `Daily Quran v2 focuses on habit-friendly engagement: switch verses instantly, request layered explanations, and ask contextual questions in natural language—while keeping the experience lightweight, respectful, and free for everyday use.`,
-      progressTitle: ['Roadmap · v2', 'In development'],
-    },
-    built: {
-      title: 'Built with',
-      description:
-        'Designed for low-friction daily use inside the browser: a React + TypeScript side-panel UI, Nest.js APIs for structured verse retrieval and AI orchestration, and production-ready deployment for dependable performance.',
-      toolkitTags: [
-        'React',
-        'TypeScript',
-        'Nest.js',
-        'Chrome Extension',
-        'LLM',
-        'Side Panel',
-        'Tailwind CSS',
-        'openai',
-        'vite',
-        'Qwen',
-        'Vercel/serverless deployment',
-        'Axios',
-      ],
-    },
-    title: 'AI-Powered Daily Quran',
-    description: `Maintaining a spiritual routine is difficult when most of the day happens in the browser. Daily Quran removes that friction by bringing reading, listening, and reflection directly into Chrome's side panel, so users can stay focused on work or study while still keeping meaningful Quran engagement in their daily flow.`,
-    links: [
-      {
-        label: 'View live extension',
-        href: 'https://chromewebstore.google.com/detail/daily-quran/diilngbfimlnkdbabjhadnblkhfbfcge',
-        icon: 'arrow_forward',
-      },
-      {
-        label: 'GitHub',
-        href: 'https://github.com/fatemehkhoshbayan/qoran-chrome-extension',
-        icon: 'open_in_new',
-      },
-    ],
-    why: {
-      title: 'Why AI-Powered Daily Quran',
-      description:
-        'The project solves a practical habit problem: people want consistent Quran time, but context switching to separate apps breaks momentum. With side-panel access, quick verse discovery, and AI-supported explanation, Daily Quran makes spiritual mindfulness feel native to modern digital routines—for busy professionals, students, new learners, and daily readers alike.',
-      features: [
-        {
-          title: 'AI-Powered',
-          description: 'Integrated with LLM',
-          titleColor: 'text-secondary text-4xl',
-        },
-        {
-          title: 'Side Panel',
-          description: 'Easy access for spiritual routines',
-          titleColor: 'text-primary-f text-4xl',
         },
       ],
     },

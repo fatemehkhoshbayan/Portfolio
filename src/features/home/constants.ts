@@ -23,7 +23,7 @@ export const projects = [
     dataAlt:
       'Manifest V3 Chrome extension with a side-panel UI: Uthmani Arabic, English translation, optional tafsir, and API-backed AI Q&A.',
     tech: ['React', 'TypeScript', 'OpenAI API', 'Tailwind'],
-    link: '',
+    link: 'https://chromewebstore.google.com/detail/daily-quran/diilngbfimlnkdbabjhadnblkhfbfcge',
     cardBackgroundClass: 'bg-warm-peach',
   },
   {
