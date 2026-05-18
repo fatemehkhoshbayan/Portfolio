@@ -167,6 +167,7 @@ export const fontSize = {
   'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '700' }],
   'body-md': ['16px', { lineHeight: '24px', fontWeight: '400' }],
   'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+  'body-xl': ['20px', { lineHeight: '30px', fontWeight: '400' }],
   'label-md': ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '500' }],
   'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.03em', fontWeight: '600' }],
 };
