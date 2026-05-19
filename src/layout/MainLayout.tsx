@@ -51,7 +51,7 @@ export default function MainLayout() {
                 <li key={link.label}>
                   <a
                     aria-label={link.label}
-                    className="text-ink-500 hover:text-highlight transition-all duration-300"
+                    className="text-ink-700 hover:text-highlight transition-all duration-300"
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"

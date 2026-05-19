@@ -5,3 +5,6 @@ export { default as ProjectSection } from './home/ProjectSection.tsx';
 export { default as PortfolioHeroSection } from './portfolio/HeroSection.tsx';
 export { default as FocusSection } from './portfolio/FocusSection.tsx';
 export { default as ProjectsSection } from './portfolio/ProjectsSection.tsx';
+export { default as CreativeLifeHeroSection } from './creativeLife/HeroSection.tsx';
+export { default as CreativeLifeGetInTouch } from './creativeLife/GetInTouch.tsx';
+export { default as CreativeLifeHobbies } from './creativeLife/Hobbies.tsx';

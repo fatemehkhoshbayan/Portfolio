@@ -1,3 +1,11 @@
+import { CreativeLifeHeroSection } from '@/features';
+
 export default function CreativeLifePage() {
-  return <></>;
+  return (
+    <>
+      <CreativeLifeHeroSection />
+      {/* <CreativeLifeHobbies /> */}
+      {/* <CreativeLifeGetInTouch /> */}
+    </>
+  );
 }
