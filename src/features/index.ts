@@ -8,3 +8,4 @@ export { default as ProjectsSection } from './portfolio/ProjectsSection.tsx';
 export { default as CreativeLifeHeroSection } from './creativeLife/HeroSection.tsx';
 export { default as CreativeLifeGetInTouch } from './creativeLife/GetInTouch.tsx';
 export { default as CreativeLifeHobbies } from './creativeLife/Hobbies.tsx';
+export { default as ImpactHeroSection } from './impact/HeroSection.tsx';
