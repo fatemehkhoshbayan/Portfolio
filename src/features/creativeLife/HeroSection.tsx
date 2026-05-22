@@ -2,8 +2,8 @@ export default function HeroSection() {
   return (
     <section className="py-section-gap w-full max-w-7xl px-12 lg:px-4">
       <div className="gap-stack-md flex flex-col items-center lg:flex-row-reverse lg:items-center lg:justify-between">
-        <div className="space-y-stack-md">
-          <span className="bg-secondary-f text-secondary text-label-lg font-label-sm inline-block rounded-full px-4 py-2 tracking-wider uppercase">
+        <div className="gap-stack-lg flex flex-col">
+          <span className="bg-secondary-f text-secondary text-label-lg font-label-sm inline-block w-fit rounded-full px-4 py-2 tracking-wider uppercase">
             Passions &amp; Pursuits
           </span>
           <h1 className="font-display-lg text-display-lg leading-tight text-stone-800">
