@@ -20,9 +20,12 @@ export default function HeroSection() {
           </figure>
         </div>
 
-        <div className="flex w-full max-w-xl flex-col items-center gap-2 text-center lg:max-w-none lg:flex-1 lg:items-start lg:text-left">
-          <h1 className="font-display-lg text-display-lg mb-stack-md text-brand tracking-tight">
-            Moving mountains with a smile.
+        <div className="flex w-full max-w-xl flex-col items-center gap-7 text-center lg:max-w-none lg:flex-1 lg:items-start lg:text-left">
+          <h1 className="font-display-lg text-display-lg leading-tight text-stone-800">
+            Moving mountains with{' '}
+            <span className="text-brand decoration-brand-soft italic underline decoration-4 underline-offset-8">
+              MY SMILE.
+            </span>
           </h1>
           <p className="font-body-lg text-body-xl text-support max-w-2xl leading-relaxed italic">
             I am <strong>Fatemeh Khoshbayan</strong>, a Full Stack Developer dedicated to combining
@@ -31,13 +34,13 @@ export default function HeroSection() {
           </p>
           <div className="mt-stack-lg flex flex-col items-center gap-12 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
             <Link
-              className="font-label-md bg-container hover:bg-highlight inline-flex items-center gap-2 rounded-md px-8 py-4 text-white transition-opacity"
+              className="font-label-md bg-container text-body-lg hover:bg-highlight inline-flex items-center gap-2 rounded-md px-8 py-4 text-white transition-opacity"
               to="/portfolio"
             >
               View My Work
               <span className="material-symbols-outlined">arrow_forward</span>
             </Link>
-            <div className="font-label-md text-accent flex items-center gap-2 transition-opacity">
+            <div className="font-label-md text-accent text-body-lg flex items-center gap-2 transition-opacity">
               <a
                 className="hover:opacity-80"
                 href="https://www.linkedin.com/in/fatemeh-khoshbayan/"

@@ -32,7 +32,7 @@ export default function MainLayout() {
             rel="noopener noreferrer"
             className="bg-brand-strong font-label-md text-body-md text-ink-700 rounded-full px-6 py-2 transition-transform ease-out hover:scale-105"
           >
-            Get in touch
+            Let's Chat
           </a>
         </nav>
       </header>
