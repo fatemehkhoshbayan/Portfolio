@@ -7,16 +7,11 @@ interface IWhyCardProps {
 
 export default function WhyCard({ reason }: IWhyCardProps) {
   return (
-    <article className="bg-on-surf p-stack-xl gap-stack-xl relative flex flex-col items-center overflow-hidden rounded-xl text-white min-[1000px]:col-span-12 min-[1000px]:flex-row">
-      <div className="flex-1">
-        <h3 className="font-headline-lg text-headline-lg mb-stack-sm text-primary-f">
-          {reason.title}
-        </h3>
-        <p className="font-body-md text-body-md text-stone-300 italic">{reason.description}</p>
-      </div>
-      <div className="gap-stack-lg grid shrink-0 grid-cols-2 sm:flex sm:flex-row">
+    <article className="bg-on-surf p-stack-xl gap-stack-xl relative flex flex-col overflow-hidden rounded-xl text-white min-[1000px]:col-span-12">
+      <h3 className="font-headline-lg text-headline-lg text-primary-f">{reason.title}</h3>
+      <div className="gap-x-stack-xl gap-y-stack-lg flex w-full flex-wrap justify-center">
         {reason.features.map(feature => (
-          <div className="text-center" key={feature.title}>
+          <div className="px-stack-sm min-w-28 text-center" key={feature.title}>
             <div
               className={cn(
                 'text-display-lg font-display-lg text-5xl leading-none font-bold',
@@ -25,10 +20,11 @@ export default function WhyCard({ reason }: IWhyCardProps) {
             >
               {feature.title}
             </div>
-            <div className="text-label-sm text-stone-400">{feature.description}</div>
+            <div className="text-label-md text-stone-400">{feature.description}</div>
           </div>
         ))}
       </div>
+      <p className="font-body-lg text-body-lg text-stone-300 italic">{reason.description}</p>
     </article>
   );
 }
