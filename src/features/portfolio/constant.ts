@@ -86,6 +86,91 @@ export const PROJECTS: IProject[] = [
   },
   {
     cover_img: {
+      src: './ctrl-alt-meet.png',
+      alt: 'Ctrl Alt Meet: event discovery with filters and favorites',
+      data_alt:
+        'React event platform: browse conferences, filter by category and price, favorite events, book tickets, and manage reservations—with auth, theming, and responsive layouts.',
+    },
+    gallery: [
+      {
+        src: './ctrl-alt-meet-speakers.png',
+        alt: 'Ctrl Alt Meet discover speakers',
+        caption: 'Discover Speakers',
+      },
+      {
+        src: './ctrl-alt-meet-events.png',
+        alt: 'Ctrl Alt Meet events listing with search and filters',
+        caption: 'Discover events',
+      },
+      {
+        src: './ctrl-alt-meet-bookings.png',
+        alt: 'Ctrl Alt Meet my bookings with upcoming and past tabs',
+        caption: 'Manage bookings',
+      },
+    ],
+    pills: ['React', 'TypeScript', 'Redux Toolkit', 'Vercel'],
+    progress: {
+      icon: 'confirmation_number',
+      topFeature: ['Booking', 'Redis'],
+      title: 'Production-ready reservations',
+      description:
+        'Shipped end-to-end: json-server locally for fast iteration, Vercel serverless handlers in production with Upstash Redis so favorites, bookings, and ticket availability persist across redeploys.',
+      progressTitle: ['Shipped · v1', 'Live on Vercel'],
+    },
+    built: {
+      title: 'Built with',
+      description:
+        'A React 19 SPA with Redux Toolkit for events, bookings, and favorites; React Hook Form + Zod for validation; Tailwind CSS v4 and Radix UI for accessible UI—backed by a mock JSON API in dev and serverless + Redis in production.',
+      toolkitTags: [
+        'React',
+        'TypeScript',
+        'Redux Toolkit',
+        'React Hook Form',
+        'Zod',
+        'Tailwind CSS',
+        'Vite',
+        'React Router',
+        'json-server',
+        'Upstash Redis',
+        'Vercel',
+        'Vercel/serverless deployment',
+      ],
+    },
+    title: 'Ctrl Alt Meet — Event Management Platform',
+    description:
+      'A conference discovery and ticketing SPA that covers the full attendee journey in one polished app. Filter and sort events by category, date, and price; explore detail pages with schedules, tiers, venues, and speakers; sign in to save favorites and complete a three-step booking flow with validation and confirmation. My Bookings keeps upcoming and past reservations in one place—with ticket details, references, and cancellation—while light/dark theme and responsive layouts make it feel production-ready end to end.',
+    links: [
+      {
+        label: 'View live app',
+        href: 'https://ctrl-alt-meet.vercel.app/',
+        icon: 'arrow_forward',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/fatemehkhoshbayan/Ctrl-Alt-Meet',
+        icon: 'open_in_new',
+      },
+    ],
+    why: {
+      title: 'Why Ctrl Alt Meet',
+      description:
+        'Event sites often demo UI without the hard parts: auth, inventory, persistence, and cancellation flows. Ctrl Alt Meet exercises the full user journey—from filtered discovery and favorites through checkout, My Bookings, and cancel—with realistic state management and a production data layer.',
+      features: [
+        {
+          title: 'REST',
+          description: 'Serverless API + Redis',
+          titleColor: 'text-secondary',
+        },
+        {
+          title: 'SPA',
+          description: 'Auth, booking & favorites',
+          titleColor: 'text-primary-f',
+        },
+      ],
+    },
+  },
+  {
+    cover_img: {
       src: './flexify.png',
       alt: 'Flexify workout app: browsing exercises overview',
       data_alt:
