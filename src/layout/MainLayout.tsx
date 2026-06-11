@@ -26,14 +26,23 @@ export default function MainLayout() {
               </li>
             ))}
           </ul>
-          <a
-            href={import.meta.env.VITE_CALENDAR_BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-brand-strong font-label-md text-body-md text-ink-700 rounded-full px-6 py-2 transition-transform ease-out hover:scale-105"
-          >
-            Let's Chat
-          </a>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <a
+              href="/Fatemeh-Khoshbayan-Resume.pdf"
+              download="Fatemeh-Khoshbayan-Resume.pdf"
+              className="border-accent-dark text-brand font-label-md text-body-md hover:bg-accent-dark rounded-full border-2 bg-white px-4 py-2 transition-transform ease-out hover:scale-105 sm:px-6"
+            >
+              Resume
+            </a>
+            <a
+              href={import.meta.env.VITE_CALENDAR_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-brand-strong font-label-md text-body-md text-ink-700 rounded-full px-4 py-2 transition-transform ease-out hover:scale-105 sm:px-6"
+            >
+              Let's Chat
+            </a>
+          </div>
         </nav>
       </header>
 
