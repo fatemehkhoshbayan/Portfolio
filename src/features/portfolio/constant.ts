@@ -189,6 +189,87 @@ export const PROJECTS: IProject[] = [
   },
   {
     cover_img: {
+      src: './virtual-business-card.png',
+      alt: 'Virtual Business Card: build a scannable QR contact card',
+      data_alt:
+        'Next.js app: enter contact details, pick colors and layout, preview a branded business card with vCard QR code, and download a share-ready PNG—with validation, logo upload, and light/dark theme.',
+    },
+    gallery: [
+      {
+        src: './virtual-business-card-builder.png',
+        alt: 'Virtual Business Card form with contact fields, colors, and layout options',
+        caption: 'Build your card',
+      },
+      {
+        src: './virtual-business-card-preview.png',
+        alt: 'Virtual Business Card live canvas preview with QR code',
+        caption: 'Live preview',
+      },
+      {
+        src: './virtual-business-card-layouts.png',
+        alt: 'Virtual Business Card vertical and horizontal layouts with custom branding',
+        caption: 'Layouts & branding',
+      },
+    ],
+    pills: ['Next.js', 'TypeScript', 'React', 'Vercel'],
+    progress: {
+      icon: 'qr_code_2',
+      topFeature: ['vCard', 'Canvas'],
+      title: 'Client-side card generation',
+      description:
+        'Shipped end-to-end in the browser: vCard 3.0 QR encoding, dynamic palette generation from brand colors, HTML Canvas rendering for vertical and horizontal layouts, and one-click PNG export—no backend required.',
+      progressTitle: ['Shipped · v1', 'Live on Vercel'],
+    },
+    built: {
+      title: 'Built with',
+      description:
+        'A Next.js 16 App Router app with React 19 and TypeScript. Tailwind CSS v4 for the builder UI; the qrcode library for scannable vCards; and a custom Canvas pipeline for gradients, logos, typography, and PNG download—all validated client-side before export.',
+      toolkitTags: [
+        'Next.js',
+        'React',
+        'TypeScript',
+        'Tailwind CSS',
+        'HTML Canvas',
+        'vCard 3.0',
+        'QRCode',
+        'Vercel',
+      ],
+    },
+    title: 'Virtual Business Card — QR Contact Card Builder',
+    description:
+      'A single-page tool for creating scannable digital business cards. Fill in name, company, title, phone, email, and website; upload an optional logo; pick primary and accent colors; and switch between vertical and horizontal layouts. A live Canvas preview updates as you type, encoding contact details into a vCard QR code phones can save in one scan. Blur and download validation keep exports clean, while light/dark UI theme and responsive layout make it feel ready to share at events or on LinkedIn.',
+    links: [
+      {
+        label: 'View live app',
+        href: 'https://virtual-business-card.vercel.app/',
+        icon: 'arrow_forward',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/fatemehkhoshbayan/virtual-business-card',
+        icon: 'open_in_new',
+      },
+    ],
+    why: {
+      title: 'Why Virtual Business Card',
+      description:
+        'QR generators often stop at plain codes or static templates. This project covers the full flow—structured contact data, branded layout, real-time preview, and export—while keeping everything client-side so there’s no account, API, or storage layer to maintain.',
+      features: [
+        {
+          title: 'vCard',
+          description: 'Scannable contact QR',
+          titleColor: 'text-secondary',
+        },
+        {
+          title: 'Canvas',
+          description: 'Live preview & PNG export',
+          titleColor: 'text-primary-f',
+        },
+      ],
+    },
+  },
+  {
+    cover_img: {
       src: './flexify.png',
       alt: 'Flexify workout app: browsing exercises overview',
       data_alt:
