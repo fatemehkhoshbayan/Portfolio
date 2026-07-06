@@ -1,4 +1,10 @@
-import { ApproachSection, HomeHeroSection, ProjectSection, ContactSection } from '@/features';
+import {
+  ApproachSection,
+  HomeHeroSection,
+  ProjectSection,
+  RecommendationsSection,
+  ContactSection,
+} from '@/features';
 
 export default function HomePage() {
   return (
@@ -6,6 +12,7 @@ export default function HomePage() {
       <HomeHeroSection />
       <ApproachSection />
       <ProjectSection />
+      <RecommendationsSection />
       <ContactSection />
     </>
   );

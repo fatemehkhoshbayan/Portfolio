@@ -2,6 +2,7 @@ export { default as HomeHeroSection } from './home/HeroSection.tsx';
 export { default as ApproachSection } from './home/ApproachSection.tsx';
 export { default as ContactSection } from './home/ContactSection.tsx';
 export { default as ProjectSection } from './home/ProjectSection.tsx';
+export { default as RecommendationsSection } from './home/RecommendationsSection.tsx';
 export { default as PortfolioHeroSection } from './portfolio/HeroSection.tsx';
 export { default as FocusSection } from './portfolio/FocusSection.tsx';
 export { default as ProjectsSection } from './portfolio/ProjectsSection.tsx';

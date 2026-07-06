@@ -1,10 +1,10 @@
-import { CreativeLifeHeroSection } from '@/features';
+import { CreativeLifeHeroSection, CreativeLifeHobbies } from '@/features';
 
 export default function CreativeLifePage() {
   return (
     <>
       <CreativeLifeHeroSection />
-      {/* <CreativeLifeHobbies /> */}
+      <CreativeLifeHobbies />
       {/* <CreativeLifeGetInTouch /> */}
     </>
   );
