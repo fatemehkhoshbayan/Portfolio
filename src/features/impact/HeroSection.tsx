@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function HeroSection() {
   return (
-    <section className="py-section-gap w-full max-w-7xl px-12 lg:px-4">
+    <section className="py-stack-xl lg:py-section-gap w-full max-w-7xl px-12 lg:px-4">
       <div className="gap-stack-lg grid grid-cols-1 items-center lg:grid-cols-12">
         <div className="gap-stack-lg flex flex-col lg:col-span-7">
           <span className="bg-secondary-f text-secondary text-label-lg font-label-sm inline-block w-fit rounded-full px-4 py-2 tracking-wider uppercase">
             BLOOM TOGETHER
           </span>
-          <h1 className="font-display-lg text-display-lg leading-tight text-stone-800">
+          <h1 className="font-display-lg text-headline-lg lg:text-display-lg leading-tight text-stone-800">
             Engineering Empathy for a{' '}
             <span className="text-brand decoration-brand-soft italic underline decoration-4 underline-offset-8">
               Brighter World
