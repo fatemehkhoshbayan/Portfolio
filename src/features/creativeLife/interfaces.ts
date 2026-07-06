@@ -29,4 +29,5 @@ export interface IHobbyCardProps {
   colorClass?: string;
   /** Override the md:col-span-* class applied to the card root */
   colSpanClass?: string;
+  imgLeft?: boolean;
 }

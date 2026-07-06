@@ -15,6 +15,7 @@ export default function HobbyCard({
   variant,
   colorClass = 'bg-white',
   colSpanClass,
+  imgLeft = false,
 }: IHobbyCardProps) {
   const span = colSpanClass ?? DEFAULT_SPAN[variant];
 
@@ -63,16 +64,25 @@ export default function HobbyCard({
       <div
         className={`custom-shadow grid gap-6 rounded-xl border-none ${colorClass} p-4 md:gap-8 md:p-8 ${span} md:grid-cols-2`}
       >
+        {imgLeft && (
+          <div className="relative h-56 overflow-hidden rounded-lg md:h-full">
+            {images[0] && (
+              <img src={images[0].src} alt={images[0].alt} className="h-full w-full object-cover" />
+            )}
+          </div>
+        )}
         <div className="flex flex-col justify-center">
           {labelBlock}
           <h3 className="font-headline-md text-headline-md mb-2 text-stone-800">{title}</h3>
           <p className="font-body-md text-stone-600">{description}</p>
         </div>
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-full">
-          {images[0] && (
-            <img src={images[0].src} alt={images[0].alt} className="h-full w-full object-cover" />
-          )}
-        </div>
+        {!imgLeft && (
+          <div className="relative h-56 overflow-hidden rounded-lg md:h-full">
+            {images[0] && (
+              <img src={images[0].src} alt={images[0].alt} className="h-full w-full object-cover" />
+            )}
+          </div>
+        )}
       </div>
     );
   }

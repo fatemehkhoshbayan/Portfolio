@@ -37,7 +37,7 @@ export default function Hobbies() {
           <HobbyCard {...natureJournal} colorClass="bg-white" />
 
           {/* Row 3: Yoga (4) + Walking in Nature (8) */}
-          <HobbyCard {...walking} colorClass="bg-white" />
+          <HobbyCard {...walking} colorClass="bg-white" imgLeft />
           <HobbyCard {...yoga} />
 
           {/* Row 4: Reading (6) + Bird Watching (6) */}
