@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   return (
-    <section className="py-section-gap w-full max-w-7xl px-12 lg:px-4">
+    <section className="py-stack-xl lg:py-section-gap w-full max-w-7xl px-10 lg:px-4">
       <div className="flex flex-col items-center gap-10 lg:flex-row-reverse lg:items-center lg:justify-between lg:gap-16">
         <div className="relative mx-auto w-full sm:max-w-[360px] lg:mx-0 lg:w-[50%] lg:max-w-[550px]">
           <div
@@ -21,7 +21,7 @@ export default function HeroSection() {
         </div>
 
         <div className="flex w-full max-w-xl flex-col items-center gap-7 text-center lg:max-w-none lg:flex-1 lg:items-start lg:text-left">
-          <h1 className="font-display-lg text-display-lg leading-tight text-stone-800">
+          <h1 className="font-display-lg text-headline-lg lg:text-display-lg leading-tight text-stone-800">
             Moving mountains with{' '}
             <span className="text-brand decoration-brand-soft italic underline decoration-4 underline-offset-8">
               MY SMILE.

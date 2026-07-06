@@ -1,9 +1,5 @@
 import { cn } from '@/lib/cn';
-import type { IProject } from './interfaces';
-
-interface IProjectCardProps {
-  projects: IProject[];
-}
+import type { IProjectCardProps } from './interfaces';
 
 export default function ProjectCard({ projects }: IProjectCardProps) {
   return projects.map(project => (
