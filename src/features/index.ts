@@ -10,3 +10,5 @@ export { default as CreativeLifeHeroSection } from './creativeLife/HeroSection.t
 export { default as CreativeLifeGetInTouch } from './creativeLife/GetInTouch.tsx';
 export { default as CreativeLifeHobbies } from './creativeLife/Hobbies.tsx';
 export { default as ImpactHeroSection } from './impact/HeroSection.tsx';
+export { default as JournalHeroSection } from './journal/HeroSection.tsx';
+export { default as JournalCards } from './journal/JournalCards.tsx';
