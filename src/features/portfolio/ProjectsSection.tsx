@@ -9,8 +9,11 @@ export default function ProjectsSection() {
     <>
       {PROJECTS.map(project => {
         return (
-          <section key={project.title} className="gap-stack-lg py-stack-2xl px-12 lg:px-4">
-            <h3 className="font-headline-lg text-headline-lg text-dark pb-stack-lg">
+          <section
+            key={project.title}
+            className="gap-stack-lg py-stack-lg lg:py-stack-2xl px-12 lg:px-4"
+          >
+            <h3 className="font-headline-lg text-headline-md lg:text-headline-lg text-dark pb-stack-lg">
               {project.title}
             </h3>
             <section

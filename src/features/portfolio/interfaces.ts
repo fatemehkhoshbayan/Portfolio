@@ -51,3 +51,19 @@ export interface IProject {
     features: Array<TFeature>;
   };
 }
+
+export interface IBuiltCardProps {
+  built: TBuilt;
+}
+
+export interface IProgressCardProps {
+  progress: TProgress;
+}
+
+export interface IProjectInfoSectionProps {
+  project: IProject;
+}
+
+export interface IWhyCardProps {
+  reason: { title: string; description: string; features: Array<TFeature> };
+}

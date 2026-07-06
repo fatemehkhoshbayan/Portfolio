@@ -1,10 +1,5 @@
 import { PillGroup, Pill, Gallery } from '@/ui';
-
-import type { IProject } from './interfaces';
-
-interface IProjectInfoSectionProps {
-  project: IProject;
-}
+import type { IProjectInfoSectionProps } from './interfaces';
 
 export default function ProjectInfoSection({ project }: IProjectInfoSectionProps) {
   return (
@@ -28,7 +23,7 @@ export default function ProjectInfoSection({ project }: IProjectInfoSectionProps
             ))}
           </PillGroup>
 
-          <h2 className="font-headline-lg text-headline-lg mb-stack-sm text-dark">
+          <h2 className="font-headline-lg text-headline-md lg:text-headline-lg mb-stack-sm text-dark">
             {project.title}
           </h2>
           <p className="font-body-md text-body-md text-support mb-stack-lg leading-relaxed">

@@ -1,8 +1,4 @@
-import type { TBuilt } from './interfaces';
-
-interface IBuiltCardProps {
-  built: TBuilt;
-}
+import type { IBuiltCardProps } from './interfaces';
 
 export default function BuiltCard({ built }: IBuiltCardProps) {
   return (

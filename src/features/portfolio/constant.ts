@@ -3,24 +3,24 @@ import type { IProject, TFocus } from './interfaces';
 export const PROJECTS: IProject[] = [
   {
     cover_img: {
-      src: './ctrl-alt-meet.png',
+      src: './ctrl-alt-meet/ctrl-alt-meet.png',
       alt: 'Ctrl Alt Meet: event discovery with filters and favorites',
       data_alt:
         'React event platform: browse conferences, filter by category and price, favorite events, book tickets, and manage reservations—with auth, theming, and responsive layouts.',
     },
     gallery: [
       {
-        src: './ctrl-alt-meet-speakers.png',
+        src: './ctrl-alt-meet/ctrl-alt-meet-speakers.png',
         alt: 'Ctrl Alt Meet discover speakers',
         caption: 'Discover Speakers',
       },
       {
-        src: './ctrl-alt-meet-events.png',
+        src: './ctrl-alt-meet/ctrl-alt-meet-events.png',
         alt: 'Ctrl Alt Meet events listing with search and filters',
         caption: 'Discover events',
       },
       {
-        src: './ctrl-alt-meet-bookings.png',
+        src: './ctrl-alt-meet/ctrl-alt-meet-bookings.png',
         alt: 'Ctrl Alt Meet my bookings with upcoming and past tabs',
         caption: 'Manage bookings',
       },
@@ -88,24 +88,24 @@ export const PROJECTS: IProject[] = [
   },
   {
     cover_img: {
-      src: './quran-extension.png',
+      src: './extension/quran-extension.png',
       alt: 'AI-Powered Daily Quran Chrome Extension',
       data_alt:
         'AI-Powered Daily Quran Chrome Extension: daily Quran reading in Chrome’s side panel with tafsir, AI reflection, Quran.com login, and synced favorites.',
     },
     gallery: [
       {
-        src: './easily-change-verse.png',
+        src: './extension/easily-change-verse.png',
         alt: 'Easily change verse',
         caption: 'Navigate verses with prev / next',
       },
       {
-        src: './more-explanation.png',
+        src: './extension/more-explanation.png',
         alt: 'Get more explanation',
         caption: 'Show tafsir and layered commentary',
       },
       {
-        src: './ask-anything-from-AI.png',
+        src: './extension/ask-anything-from-AI.png',
         alt: 'Ask AI About the Verse',
         caption: 'Ask AI contextual questions',
       },
@@ -189,24 +189,24 @@ export const PROJECTS: IProject[] = [
   },
   {
     cover_img: {
-      src: './virtual-business-card.png',
+      src: './virtual-business/virtual-business-card.png',
       alt: 'Virtual Business Card: build a scannable QR contact card',
       data_alt:
         'Next.js app: enter contact details, pick colors and layout, preview a branded business card with vCard QR code, and download a share-ready PNG—with validation, logo upload, and light/dark theme.',
     },
     gallery: [
       {
-        src: './virtual-business-card-builder.png',
+        src: './virtual-business/virtual-business-card-builder.png',
         alt: 'Virtual Business Card form with contact fields, colors, and layout options',
         caption: 'Build your card',
       },
       {
-        src: './virtual-business-card-preview.png',
+        src: './virtual-business/virtual-business-card-preview.png',
         alt: 'Virtual Business Card live canvas preview with QR code',
         caption: 'Live preview',
       },
       {
-        src: './virtual-business-card-layouts.png',
+        src: './virtual-business/virtual-business-card-layouts.png',
         alt: 'Virtual Business Card vertical and horizontal layouts with custom branding',
         caption: 'Layouts & branding',
       },
@@ -270,24 +270,24 @@ export const PROJECTS: IProject[] = [
   },
   {
     cover_img: {
-      src: './flexify.png',
+      src: './flexify/flexify.png',
       alt: 'Flexify workout app: browsing exercises overview',
       data_alt:
         'Smart workout planner SPA: explore exercises by muscle and difficulty, search, favorites, and a plan builder—without a heavy subscription platform.',
     },
     gallery: [
       {
-        src: './flexify-plan.png',
+        src: './flexify/flexify-plan.png',
         alt: 'Flexify workout app: browsing exercises overview',
         caption: 'Get a plan',
       },
       {
-        src: './flexify-browse.png',
+        src: './flexify/flexify-browse.png',
         alt: 'Flexify filtering exercises by muscle and difficulty',
         caption: 'Filter & discover',
       },
       {
-        src: './flexify-detail.png',
+        src: './flexify/flexify-detail.png',
         alt: 'Flexify exercise detail with instructions',
         caption: 'Exercise detail',
       },
