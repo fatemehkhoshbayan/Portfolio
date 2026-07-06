@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import MainLayout from './layout/MainLayout.tsx';
-import { HomePage, PortfolioPage, CreativeLifePage, ImpactPage } from '@/pages';
+import { MainLayout } from '@/layout';
+import { HomePage, PortfolioPage, CreativeLifePage, ImpactPage, JournalPage } from '@/pages';
 
 export default function App() {
   return (
@@ -10,6 +10,7 @@ export default function App() {
         <Route path="portfolio" element={<PortfolioPage />} />
         <Route path="creative-life" element={<CreativeLifePage />} />
         <Route path="impact" element={<ImpactPage />} />
+        <Route path="journal" element={<JournalPage />} />
       </Route>
     </Routes>
   );

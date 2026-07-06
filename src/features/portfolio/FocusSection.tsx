@@ -2,7 +2,7 @@ import { focus } from './constant';
 
 export default function FocusSection() {
   return (
-    <section className="gap-stack-lg pb-section-gap grid w-full max-w-7xl grid-cols-1 px-12 lg:grid-cols-3 lg:px-4">
+    <section className="gap-stack-lg lg:pb-section-gap grid w-full max-w-7xl grid-cols-1 px-12 lg:grid-cols-3 lg:px-4">
       {focus.map(item => (
         <div key={item.title} className="p-stack-lg text-center">
           <span className="material-symbols-outlined text-brand mb-stack-md text-4xl">

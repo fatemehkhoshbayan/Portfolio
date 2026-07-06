@@ -19,7 +19,7 @@ export const approachCards = [
 export const projects = [
   {
     title: 'Daily Quran',
-    image: './quran-extension.png',
+    image: './extension/quran-extension.png',
     dataAlt:
       'Manifest V3 Chrome extension with a side-panel UI: Uthmani Arabic, English translation, optional tafsir, and API-backed AI Q&A.',
     tech: ['React', 'TypeScript', 'OpenAI API', 'Tailwind'],
@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'Flexify',
-    image: './flexify.png',
+    image: './flexify/flexify.png',
     dataAlt:
       'Smart workout planner SPA: explore exercises by muscle and difficulty, search, favorites, and a plan builder—without a heavy subscription platform.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Vercel'],

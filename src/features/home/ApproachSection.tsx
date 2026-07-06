@@ -3,9 +3,9 @@ import { approachCards, stacks } from './constants';
 
 export default function ApproachSection() {
   return (
-    <section className="py-section-gap w-full max-w-7xl px-12 lg:px-4">
+    <section className="py-stack-lg lg:py-section-gap w-full max-w-7xl px-10 lg:px-4">
       <div className="mb-stack-lg">
-        <h2 className="font-headline-lg text-headline-lg text-on-surf">
+        <h2 className="font-headline-lg text-headline-md lg:text-headline-lg text-on-surf">
           Philosophy &amp; Approach
         </h2>
         <div className="bg-brand-strong mt-3 h-1 w-24"></div>

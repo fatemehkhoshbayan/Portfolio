@@ -147,6 +147,7 @@ export const spacing = {
   'stack-xl': '64px',
   'stack-2xl': '80px',
   'section-gap': '120px',
+  'section-gap-lg': '210px',
 };
 
 export const boxShadow = {

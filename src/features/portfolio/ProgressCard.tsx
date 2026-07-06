@@ -1,8 +1,4 @@
-import type { TProgress } from './interfaces';
-
-interface IProgressCardProps {
-  progress: TProgress;
-}
+import type { IProgressCardProps } from './interfaces';
 
 export default function ProgressCard({ progress }: IProgressCardProps) {
   return (

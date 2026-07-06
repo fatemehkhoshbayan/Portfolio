@@ -1,6 +1,6 @@
 export default function ContactSection() {
   return (
-    <section className="bg-brand-soft/20 py-stack-2xl my-section-gap mx-5 w-full max-w-7xl rounded-3xl px-4 text-center">
+    <section className="bg-brand-soft/20 py-stack-2xl mt-stack-lg lg:my-section-gap w-full max-w-7xl rounded-3xl px-10 text-center lg:px-4">
       <h2 className="font-headline-lg text-headline-lg text-primary mb-4">
         Let's build something beautiful together.
       </h2>
