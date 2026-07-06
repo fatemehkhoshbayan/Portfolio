@@ -6,7 +6,7 @@ export default function RecommendationCard({
   desktopScrollRef,
 }: {
   activeIndex: number;
-  desktopScrollRef: React.RefObject<HTMLDivElement>;
+  desktopScrollRef: React.RefObject<HTMLDivElement | null>;
 }) {
   return (
     <>
