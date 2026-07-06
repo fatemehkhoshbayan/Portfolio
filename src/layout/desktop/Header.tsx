@@ -3,10 +3,10 @@ import { navItems } from '@/assets/navItems.ts';
 
 export default function Header() {
   return (
-    <header className="full-width bg-canvas sticky top-0 z-50 shadow-md">
+    <header className="full-width bg-canvas sticky top-0 z-50 hidden shadow-md lg:block">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
         <p className="font-headline-lg text-ink-900 text-2xl font-bold">Moving Mountains</p>
-        <ul className="items-center gap-8 font-serif text-lg tracking-tight md:flex">
+          <ul className="hidden items-center gap-8 font-serif text-lg tracking-tight lg:flex">
           {navItems.map(item => (
             <li key={item.label}>
               <NavLink
