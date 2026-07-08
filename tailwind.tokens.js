@@ -158,6 +158,7 @@ export const boxShadow = {
 
   'md-up': '0 -10px 20px -14px rgba(0, 0, 0, 0.35)',
   sun: '0 0 36px -6px rgba(255, 193, 7, 0.22), 0 0 22px rgba(0, 0, 0, 0.12)',
+  'sun-sm': '0 0 12px -2px rgba(255, 193, 7, 0.22), 0 0 8px rgba(0, 0, 0, 0.12)',
   custom: '0 10px 30px -10px rgba(255, 193, 7, 0.15)',
 };
 

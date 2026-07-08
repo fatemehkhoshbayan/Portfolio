@@ -10,10 +10,16 @@ export interface IProject {
 }
 
 export interface IRecommendationCardItemProps {
-  rec: Recommendation;
+  recommendation: Recommendation;
   className?: string;
 }
 
 export interface IProjectCardProps {
   projects: IProject[];
+}
+
+export interface IRecommendationDialogProps {
+  recommendation: Recommendation;
+  open: boolean;
+  onClose: () => void;
 }
