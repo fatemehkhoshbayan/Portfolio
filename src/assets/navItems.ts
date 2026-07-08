@@ -1,5 +1,13 @@
 import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHeadset } from '@fortawesome/free-solid-svg-icons';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+
+export type FooterLink = {
+  label: string;
+  href: string;
+  icon: IconDefinition;
+  internal?: boolean;
+};
 
 export const navItems = [
   { label: 'Home', href: '/' },
@@ -8,7 +16,8 @@ export const navItems = [
   { label: 'Impact', href: '/impact' },
 ];
 
-export const footerLinks = [
+export const footerLinks: FooterLink[] = [
+  { label: 'Support', href: '/support', icon: faHeadset, internal: true },
   { label: 'Medium', href: 'https://medium.com/@f.khoshbayan', icon: faMedium },
   { label: 'GitHub', href: 'https://github.com/fatemehkhoshbayan', icon: faGithub },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/fatemeh-khoshbayan/', icon: faLinkedin },
