@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import { footerLinks } from '@/assets/navItems.ts';
 
 export default function Footer() {
@@ -9,17 +10,31 @@ export default function Footer() {
         <p className="text-ink-500">© 2026 Moving mountains with my smile.</p>
         <ul className="flex gap-6">
           {footerLinks.map(link => {
+            const icon = (
+              <FontAwesomeIcon icon={link.icon} aria-hidden="true" className="text-2xl" />
+            );
+
             return (
               <li key={link.label}>
-                <a
-                  aria-label={link.label}
-                  className="text-ink-700 hover:text-highlight transition-all duration-300"
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={link.icon} aria-hidden="true" className="text-2xl" />
-                </a>
+                {link.internal ? (
+                  <Link
+                    aria-label={link.label}
+                    className="text-ink-700 hover:text-highlight transition-all duration-300"
+                    to={link.href}
+                  >
+                    {icon}
+                  </Link>
+                ) : (
+                  <a
+                    aria-label={link.label}
+                    className="text-ink-700 hover:text-highlight transition-all duration-300"
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {icon}
+                  </a>
+                )}
               </li>
             );
           })}
