@@ -12,3 +12,6 @@ export { default as CreativeLifeHobbies } from './creativeLife/Hobbies.tsx';
 export { default as ImpactHeroSection } from './impact/HeroSection.tsx';
 export { default as JournalHeroSection } from './journal/HeroSection.tsx';
 export { default as JournalCards } from './journal/JournalCards.tsx';
+export { default as SupportHeroSection } from './support/HeroSection.tsx';
+export { default as SupportContactOptionsSection } from './support/ContactOptionsSection.tsx';
+export { default as SupportFormSection } from './support/SupportFormSection.tsx';
