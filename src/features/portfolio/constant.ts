@@ -241,7 +241,7 @@ export const PROJECTS: IProject[] = [
     links: [
       {
         label: 'View live app',
-        href: 'https://virtual-business-card.vercel.app/',
+        href: 'https://virtual-business-card-eight-gamma.vercel.app/',
         icon: 'arrow_forward',
       },
       {
