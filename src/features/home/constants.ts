@@ -1,3 +1,5 @@
+import type { Recommendation } from './interfaces';
+
 export const approachCards = [
   {
     title: 'Impact First',
@@ -39,16 +41,16 @@ export const projects = [
 
 export const stacks = ['React/Next.js', 'Python', 'TypeScript', 'Postgres', 'MongoDB'];
 
-export interface Recommendation {
-  name: string;
-  title: string;
-  relationship: string;
-  highlight: string;
-  text: string;
-  linkedinUrl?: string;
-}
-
 export const RECOMMENDATIONS: Recommendation[] = [
+  {
+    name: 'Zuhair Khaja Moinuddin',
+    title: 'AI Application Developer',
+    relationship: 'Lead at AroundHI Solutions',
+    highlight:
+      'What stood out most was her solid understanding of frontend architecture, React, and industry best practices. She writes clean, scalable, and maintainable code while always being eager to learn and improve.',
+    text: 'I had the pleasure of leading Fatemeh during her internship, and she consistently exceeded expectations. She joined the team to improve our frontend UI, but her impact went far beyond her assigned responsibilities. Along with delivering high-quality, user-friendly interfaces, she demonstrated strong leadership by taking ownership of tasks, collaborating effectively with the team, and making my role as a team lead much easier. What stood out most was her solid understanding of frontend architecture, React, and industry best practices. She writes clean, scalable, and maintainable code while always being eager to learn and improve. Her proactive attitude, technical expertise, and professionalism make her a valuable asset to any engineering team. I can confidently vouch for her skills as a React and Frontend Developer and would highly recommend her to any organization. I have no doubt she will continue to excel in her career.',
+    linkedinUrl: 'https://www.linkedin.com/in/zuhair-moinuddin/',
+  },
   {
     name: 'Farshid Abdi',
     title: 'Senior Software Architect',

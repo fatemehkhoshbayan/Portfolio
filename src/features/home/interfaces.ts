@@ -1,5 +1,3 @@
-import type { Recommendation } from './constants';
-
 export interface IProject {
   title: string;
   image: string;
@@ -22,4 +20,13 @@ export interface IRecommendationDialogProps {
   recommendation: Recommendation;
   open: boolean;
   onClose: () => void;
+}
+
+export interface Recommendation {
+  name: string;
+  title: string;
+  relationship: string;
+  highlight: string;
+  text: string;
+  linkedinUrl?: string;
 }
